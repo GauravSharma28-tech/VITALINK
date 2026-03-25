@@ -1,0 +1,7 @@
+node_modules
+build
+.env
+.vscode
+sensorData copy.ts
+cattle copy.ts
+NotificationSystemArchitecture.html

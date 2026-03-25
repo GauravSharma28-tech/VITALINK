@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet.js Map</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        #map { height: 500px; width: 100%; }
+    </style>
+</head>
+<body>
+
+    <h2>IoT Cattle GPS Tracking</h2>
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([6.872591, 80.797847], 25); // Default to Ambewela
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        }).addTo(map);
+
+        // Fetch GPS data from backend
+        fetch("http://localhost:5000/api/sensor/location")
+            .then(response => response.json())
+            .then(data => {
+                Object.keys(data).forEach((key)=>{
+                    const value = data[key];
+                    var marker = L.marker([value.gpsLocation.latitude, value.gpsLocation.longitude]).addTo(map);
+                    marker.bindPopup(`<b>Cattle ID: ${key}</b><br>Lat: ${value.gpsLocation.latitude}, Lon: ${value.gpsLocation.longitude}<br> Timestamp: ${value.timestamp}`);
+                })
+            })
+            .catch(error => console.error("Error fetching GPS data:", error));
+    </script>
+
+</body>
+</html>

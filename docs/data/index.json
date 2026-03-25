@@ -1,0 +1,36 @@
+{
+  "image": "cover_page.jpg",
+  "thumbnail": "thumbnail.jpg",
+  "team": [
+    {
+      "name": "Ahemad I.I.",
+      "email": "e20009@eng.pdn.ac.lk",
+      "eNumber": "E/20/009"
+    },
+    {
+      "name": "Ketharagan P",
+      "email": "e20199@eng.pdn.ac.lk",
+      "eNumber": "E/20/199"
+    },
+    {
+      "name": "Rishanthan S.",
+      "email": "e20338@eng.pdn.ac.lk",
+      "eNumber": "E/20/338"
+    },
+    {
+      "name": "A.M.Rismy",
+      "email": "e20339@eng.pdn.ac.lk",
+      "eNumber": "E/20/339"
+    }
+  ],
+  "supervisors": [
+    {
+      "name": "Dr. Isuru Nawinne",
+      "email": "isurunawinne@eng.pdn.ac.lk"
+    }
+  ],
+
+
+  "tags": ["Web", "Embedded Systems"]
+
+}

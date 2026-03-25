@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMS-Cattle Management System</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-white sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="./assets/images/logN.jpg" alt="CMS Logo" width="50" height="50" class="me-2">
+          
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#intro">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#architecture">Solution Architecture</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#h&s">Heardware & software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testing">Testing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#budget">Budget</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#links">Links</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1
+              data-aos="fade-left"
+              class="text-uppercase text-white fw-semibold display-1"
+            >
+              Welcome to cms
+            </h1>
+            <h5 class="text-white mt-3 mb-4" data-aos="fade-right">
+              CATTLE MANAGEMENT SYSTEM
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="intro" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="section-title">
+              <h1 class="display-4 fw-semibold">INTRODUCTION</h1>
+              <div class="line"></div>
+              <p>
+                Our Cattle Management System is a user-friendly web application designed
+                to help farmers efficiently manage their cattle. It tracks
+                important details like temperature, live GPS location, and heart
+                rate, making it easier to ensure the well-being of your
+                livestock. With this system, you can save time, improve
+                operations, and focus on growing your farm.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-6">
+            <img src="./assets/images/Intro1.jpg" alt="" />
+          </div>
+          <div class="col-lg-5">
+            <h1>Our Features</h1>
+            <p class="para mt-3 mb-4">
+              Our Cattle Management System comes with a range of advanced
+              features to support farmers in taking better care of their
+              livestock
+            </p>
+            <div class="d-flex pt-4 mb-3">
+              <div class="iconbox me-4">
+                <i class="ri-heart-pulse-fill"></i>
+              </div>
+              <div>
+                <h5>Health Monitoring</h5>
+                <p>
+                  The system monitors cattles' heart rate and temperature to detect potential
+                  health issues early.Hence, helping prevent diseases.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex mb-3">
+              <div class="iconbox me-4">
+                <i class="ri-navigation-fill"></i>
+              </div>
+              <div>
+                <h5>Smart GPS</h5>
+                <p>
+                  With location tracking, farmers can monitor cattle during
+                  grazing and ensure they safely return to the barn.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex mb-3">
+              <div class="iconbox me-4">
+                <i class="ri-alert-fill"></i>
+              </div>
+              <div>
+                <h5>Alert Notifications</h5>
+                <p>
+                  The system provides real-time alerts through a software
+                  interface when anomalies are detected.Hence, allowing quick action.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex pt-4 mb-3">
+              <div class="iconbox me-4">
+                <i class="ri-database-fill"></i>
+              </div>
+              <div>
+                <h5>Data Collection and Analysis</h5>
+                <p>
+                  It records and analyzes the behavior of each animal, giving
+                  valuable insights for improving care and productivity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <video width="800" height="440" controls preload="none">
+            <source src="./assets/video/1.mp4" type="video/mp4">
+            <source src="./assets/video/1.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture -->
+    <section id="architecture" class="section-padding border-top">
+      <div class="container">
+        <div
+          class="col-12 text-center"
+          data-aos="fade-down"
+          data-aos-delay="150"
+        >
+          <div class="section-title">
+            <h1 class="display-4 fw-semibold">Solution Architecture</h1>
+            <div class="line"></div>
+            <p class="lead styled-paragraph">
+              The architecture of our Cattle Management System is designed to
+              seamlessly integrate IoT sensors, cloud analytics, and user
+              interfaces for effective livestock monitoring.
+            </p>
+            <ul
+              class="list-group styled-list text-start mx-auto"
+              style="max-width: 1000px"
+            >
+              <li class="list-group-item">
+                IoT sensors: Measure temperature, heart rate, motion, and GPS
+                location in real-time.
+              </li>
+              <li class="list-group-item">
+                Cloud-IoT analytics: Processes and analyzes data for detecting
+                health issues and abnormal behaviors.
+              </li>
+              <li class="list-group-item">
+                Smart notifications: Sends alerts to farmers via a software
+                interface when anomalies are detected.
+              </li>
+              <li class="list-group-item">
+                User-friendly interface: Displays real-time data, insights, and
+                notifications for better decision-making.
+              </li>
+              <li class="list-group-item">
+                Scalable design: Supports future enhancements like additional
+                sensors or advanced analytics.
+              </li>
+            </ul>
+            <!-- Image Section -->
+            <div class="image-container mt-4">
+              <img
+                src="./assets/images/designNN.png"
+                alt="Cattle Monitoring System"
+                class="img-fluid styled-image"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL PRODUCT -->
+    <section id="final-product" class="section-padding border-top">
+      <div class="container text-center">
+        <div class="section-title">
+          <h1 class="display-4 fw-semibold">Final Product</h1>
+          <div class="line"></div>
+          <p class="lead styled-paragraph">
+            Here's a look at our completed and tested final product, ready for real-world use.
+          </p>
+        </div>
+        <div class="final-product-wrapper">
+          <img
+            src="images/final_product.jpg"
+            alt="Final Product"
+            class="final-product-img"
+          />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Our Website -->
+    <section id="our-website" style="padding: 10; text-align: center;">
+      <div class="container">
+        <h2>Our Website</h2>
+        <p>Here's a snapshot of our dashboard</p>
+        <img src="assets/images/dashboard.png" alt="Dashboard Image" style="max-width: 90%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+      </div>
+    </section>
+
+    <!-- DEMONSTRATION -->
+    <section id="demonstration" class="section-padding border-top">
+      <div class="container text-center">
+        <div class="section-title">
+          <h1 class="display-4 fw-semibold">Product Live Testing</h1>
+          <div class="line"></div>
+          <p class="lead styled-paragraph">
+            Watch how our final product performs in a real-world scenario and take a closer look at its build.
+          </p>
+        </div>
+
+        <div class="demo-content">
+          <!-- Video -->
+          <div class="demo-video">
+            <video controls class="demo-media" >
+              <source src="./assets/video/demo_vdo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Image -->
+          <div class="demo-image">
+            <img
+              src="./assets/images/demo_image.jpg"
+              alt="Demonstration Image"
+              class="demo-media"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- 3D Design -->
+    <section id="design" style="padding: 40px 0; text-align: center;">
+      <div class="container">
+        <h2>3D Design</h2>
+        <p>Our 3D models for the system</p>
+        <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+          <img src="assets/images/design11.png" alt="3D Design 1" style="max-width: 45%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+          <img src="assets/images/design2.png" alt="3D Design 2" style="max-width: 45%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </div>
+      </div>
+    </section>
+
+    <!-- HARDWARE AND SOFTWARE DESIGN -->
+    <section id="h&s" class="section-padding border-top">
+      <div class="container">
+        <div
+          class="col-12 text-center"
+          data-aos="fade-down"
+          data-aos-delay="150"
+        >
+          <div class="section-title">
+            <h1 class="display-4 fw-semibold">Hardware & Software Design</h1>
+            <div class="underline"></div>
+            <p class="lead styled-paragraph">
+              The integration of advanced hardware components and robust
+              software frameworks ensures a reliable and efficient system for
+              modern applications. The hardware components, including sensors,
+              microcontrollers, and displays, provide the foundation for data
+              collection and interaction. Complementing this, the software
+              frameworks enable processing, analysis, and seamless user
+              interaction, making the system adaptable and scalable for diverse
+              requirements.
+            </p>
+            <div class="row g-4">
+              <!-- Hardware List -->
+              <div class="col-12 col-md-6">
+                <div class="list-wrapper">
+                  <h2 class="list-title">HARDWARE COMPONENTS</h2>
+                  <div class="list-underline"></div>
+                  <ul class="custom-list">
+                    <li>
+                      Micro Controller (ESP32) : Central processing unit
+                    </li>
+                    <li>Heart Rate Sensor (MAX 30102) : Measure Heart rate</li>
+                    <li>Gps Module (NEO-6M): Get GPS coordinates</li>
+                    <li>
+                      Temperature Sensor (MAX 30205) : Measure body temperature
+                    </li>
+                    <li>Lora module(Ra-02 SX1278) : Transfer sensor data</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Software List -->
+              <div class="col-12 col-md-6">
+                <div class="list-wrapper">
+                  <h2 class="list-title">SOFTWARE FRAMEWORKS</h2>
+                  <div class="list-underline"></div>
+                  <ul class="custom-list">
+                    <li>React: For front end development</li>
+                    <li>Express Js: Web application framework</li>
+                    <li>Node Js: Manage Server and Routes</li>
+                    <li>Mongo DB: Database management</li>
+                    <li>MQTT Broker: To coordinate MQTT messages</li>
+                    <li>AWS: For cloud management</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TESTING -->
+    <section id="testing" class="section-padding border-top">
+      <div class="container">
+        <div
+          class="col-12 text-center"
+          data-aos="fade-down"
+          data-aos-delay="150"
+        >
+          <div class="section-title">
+            <h1 class="display-4 fw-semibold">TESTING</h1>
+            <div class="underline"></div>
+            <p class="lead styled-paragraph">
+              Rigorous testing ensures the reliability and efficiency of both
+               hardware and software components. Hardware testing validates the
+                performance and durability of physical components, while software
+                 testing verifies the accuracy and stability of software frameworks.
+                  Together, these tests create a robust and dependable system.
+            </p>
+            </p>
+            <div class="row g-4">
+              <!-- Hardware List -->
+              <div class="col-12 col-md-6">
+                <div class="list-wrapper">
+                  <h2 class="list-title">HARDWARE TESTING</h2>
+                  <div class="list-underline"></div>
+                  <ul class="custom-list">
+                    <li>Power Supply Testing: Verifying voltage stability and efficiency</li>
+                    <li>Sensor Calibration: Ensuring accurate readings from sensors</li>
+                    <li>Temperature Resistance: Testing performance in extreme conditions</li>
+                    <li>GPS Accuracy: Validating precise location tracking</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Software List -->
+              <div class="col-12 col-md-6">
+                <div class="list-wrapper">
+                  <h2 class="list-title">SOFTWARE TESTING</h2>
+                  <div class="list-underline"></div>
+                  <ul class="custom-list">
+                    <li>Unit Testing: Testing individual components for correctness</li>
+                    <li>Integration Testing: Verifying interaction between software modules</li>
+                    <li>Load Testing: Evaluating performance under high traffic</li>
+                    <li>User Interface Testing: Ensuring a seamless user experience</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- TESTING IMAGES FLEX LAYOUT -->
+        <div class="testing-images">
+          <div class="image-row">
+            <img src="assets/images/testing1.png" alt="Testing Image 1">
+            <img src="assets/images/testing2.PNG" alt="Testing Image 2">
+          </div>
+          <div class="image-row">
+            <img src="assets/images/testing3.PNG" alt="Testing Image 3">
+            <img src="assets/images/testing44.PNG" alt="Testing Image 4">
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+    </section>
+
+        <!-- BUDGET -->
+        <section id="budget" class="section-padding border-top">
+          <div class="container">
+            <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
+              <div class="section-title">
+                <h1 class="display-4 fw-semibold">Estimated Budget</h1>
+                <div class="line"></div>
+                <p class="lead styled-paragraph">
+                  Below is a breakdown of the estimated costs for the hardware.
+                </p>
+              </div>
+            </div>
+        
+            <!-- Responsive Table -->
+            <div class="table-responsive">
+              <table class="table table-bordered table-hover text-center">
+                <thead class="table-dark">
+                  <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Unit Price (LKR)</th>
+                    <th>Total Cost (LKR)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ESP32</td>
+                    <td>2</td>
+                    <td>1,490</td>
+                    <td>2,980</td>
+                  </tr>
+                  <tr>
+                    <td>Heart Rate Sensor</td>
+                    <td>1</td>
+                    <td>980</td>
+                    <td>980</td>
+                  </tr>
+                  <tr>
+                    <td>Gps Module</td>
+                    <td>1</td>
+                    <td>900</td>
+                    <td>900</td>
+                  </tr>
+                  <tr>
+                    <td>Temperature Sensor</td>
+                    <td>1</td>
+                    <td>2,600</td>
+                    <td>2,600</td>
+                  </tr>
+                  <tr>
+                    <td>Lora Module</td>
+                    <td>2</td>
+                    <td>1500</td>
+                    <td>3,000</td>
+                  </tr>
+                  <tr>
+                    <td>GSM GPRS module</td>
+                    <td>1</td>
+                    <td>950</td>
+                    <td>950</td>
+                  </tr>
+                  <tr>
+                    <td>Battery</td>
+                    <td>1</td>
+                    <td>2,780</td>
+                    <td>2,780</td>
+                  </tr>
+                  <tr>
+                    <td>PCB Printing</td>
+                    <td>2</td>
+                    <td>2,000</td>
+                    <td>2,000</td>
+                  </tr>
+                  <tr>
+                    <td>Other Expenses</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>2,500</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr class="table-danger">
+                    <th colspan="3" class="text-end">Total</th>
+                    <th>18,690 LKR</th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        
+    <!-- TEAM -->
+    <section id="team" class="section-padding border-top">
+      <div class="container">
+        <div
+          class="col-12 text-center"
+          data-aos="fade-down"
+          data-aos-delay="150"
+        >
+          <div class="section-title">
+            <h1 class="display-4 fw-semibold">Team</h1>
+            <div class="line"></div>
+            <p class="lead styled-paragraph">
+              Meet Our Crew Members
+            </p>
+          </div>
+        </div>
+        <div class="row text-center g-4">
+          <div class="col-lg-3 col-sm-6">
+              <div class="team-member card-effect">
+                  <img src="./assets/images/e20009.jpg" alt="">
+                  <h5 class="mb-0 mt-4">Ahemad I.I</h5>
+                  <p>E/20/009</p>
+                  <div class="social-icons">
+                      <a href="https://www.thecn.com/IA518"><i class='ri-profile-fill'></i></a>
+                      <a href="https://www.linkedin.com/in/imaam-ahemad/"><i class='ri-linkedin-box-fill'></i></a>
+                      <a href="https://github.com/Ahemad72"><i class='ri-github-fill'></i></a>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="team-member card-effect">
+                  <img src="./assets/images/e20199.jpg" alt="">
+                  <h5 class="mb-0 mt-4">Ketharagan P</h5>
+                  <p>E/20/199</p>
+                  <div class="social-icons">
+                      <a href="https://www.thecn.com/EK646"><i class='ri-profile-fill'></i></a>
+                      <a href="https://www.linkedin.com/in/ketharagan-p-767b11204?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BgWG7fQWRRi%2BcPUXEJOmapw%3D%3D">
+                        <i class='ri-linkedin-box-fill'></i></a>
+                      <a href="https://github.com/ketha29"><i class='ri-github-fill'></i></a>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="team-member card-effect">
+                  <img src="./assets/images/e20338.jpg" alt="">
+                  <h5 class="mb-0 mt-4">Rishanthan S</h5>
+                  <p>E/20/338</p>
+                  <div class="social-icons">
+                      <a href="https://www.thecn.com/RS2026"><i class='ri-profile-fill'></i></a>
+                      <a href="https://www.linkedin.com/in/rishanthan-sridharan-7bb03b204"><i class='ri-linkedin-box-fill'></i></a>
+                      <a href="https://github.com/Rishanthan13"><i class='ri-github-fill'></i></a>
+                      
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+              <div class="team-member card-effect">
+                  <img src="./assets/images/339 (Custom).jpg" alt="">
+                  <h5 class="mb-0 mt-4">Rismy A.M</h5>
+                  <p>E/20/339</p>
+                  <div class="social-icons">
+                      <a href="https://www.thecn.com/ER732"><i class='ri-profile-fill'></i></a>
+                      <a href="https://www.linkedin.com/in/mohamad-rismy-229063288?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BG0Jp702ISRSJ%2Bu%2BUjal3bQ%3D%3D"><i class='ri-linkedin-box-fill'></i></a>
+                      <a href="https://github.com/mrismy"><i class='ri-github-fill'></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+        <!-- LINK -->
+        <section id="links" class="section-padding border-top">
+          <div class="container">
+            <div
+              class="col-12 text-center"
+              data-aos="fade-down"
+              data-aos-delay="150"
+            >
+              <div class="section-title">
+                <h1 class="display-4 fw-semibold">Useful Link</h1>
+                <div class="line"></div>
+                <p class="lead styled-paragraph">
+                  Explore more about project and related resources through the following links
+                </p>
+              </div>
+              <!-- Buttons -->
+              <div class="links-container">
+                <a href="https://github.com/cepdnaclk/e20-3yp-Cattle-Management-System" target="_blank" class="glow-button">GitHub</a>
+                <a href="https://cepdnaclk.github.io/e20-3yp-Cattle-Management-System" class="glow-button">Project Page</a>
+                <a href="https://www.ce.pdn.ac.lk/" class="glow-button">Computer Engineering Department</a>
+                <a href="https://eng.pdn.ac.lk/" class="glow-button">Faculty of Engineering</a>
+                <a href="https://www.pdn.ac.lk/" class="glow-button">University of Peradeniya</a>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+
+      <!-- IMAGE MODAL -->
+      <div class="modal" id="imgModal">
+        <div class="modal-inner">
+          <img class="modal-content" id="modalImg">
+        </div>
+      </div>
+
+      <script>
+        const modal = document.getElementById("imgModal");
+        const modalImg = document.getElementById("modalImg");
+
+        document.querySelectorAll(".image-row img").forEach((img) => {
+          img.addEventListener("click", function () {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+          });
+        });
+
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            modal.style.display = "none";
+            modalImg.src = "";
+          }
+        });
+      </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

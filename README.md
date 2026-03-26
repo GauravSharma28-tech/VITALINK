@@ -1,4 +1,4 @@
-# Cattle Management System  
+# Cattle Management System  fr
 
 ## Introduction  
 The Cattle Management System is a proposed solution designed to enhance the management and monitoring of cattle. The system focuses on two main features: **health monitoring** and **location tracking**. The system aims to improve livestock management by providing farmers with real-time data, enabling them to make informed decisions and ensure the safety and health of their cattle. This project is designed to be user-friendly, making it easy for farmers to manage their cattle efficiently.  
